@@ -1,0 +1,17 @@
+phase 1 : Intro
+-----------------------
+-Install terraform  :  https://kodekloud.com/blog/easy-guide-to-install-terraform-on-windows/
+-Auth to Aws  (install AWS CLI First, then run "AWS configure" to setup auth )
+-Hello world tf config file
+-learn about : Init, Plan, Apply, Destroy 
+
+
+
+Phase 2:  build projects  
+---------------------------
+Project 1 :  
+Provision an AWS EC2 Instance
+Objective: Create an EC2 instance in AWS.
+
+project 2: 
+Objective: Create an S3 bucket in AWS.
