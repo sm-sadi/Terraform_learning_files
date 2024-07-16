@@ -1,0 +1,7 @@
+output "instanc_ip_address" {
+        = resourceType.resourceName.what is the ourput...
+  value = aws_instance.First-terraform.private_ip
+}
+
+to see the output :   terraform output 
+to see a specific output :   terraform output instanc_ip_address

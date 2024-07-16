@@ -1,0 +1,11 @@
+terraform commands : 
+-------
+Step 1 :  init (just like npm initialization)
+step 2 :  plan (it checks what is resouses correncty available )
+step 3 :  apply (for the chnages to happen in the cloud)
+step 4 :  destroy (to destroy the resouses)
+
+
+Short form IPAD to remember 
+
+terrafor output to see the outputs of the action. 

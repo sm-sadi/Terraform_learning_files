@@ -1,0 +1,28 @@
+// Variable syntax: 
+------------------
+variable "instance_name" {
+  description = "Value of the Name tag for the EC2 instance"
+  type        = string
+  default     = "The vaule that will be used"
+}
+
+// Variable with sensitive information 
+-------------------------------------
+variable "db_username" {
+  description = "Database administrator username"
+  type        = string
+  sensitive   = true
+}
+
+//storing sensitve data
+----------------------------
+then store the sensitive data in a ___.tfvars file like : 
+db_username = "admin"
+
+
+//Multiple tfvars file
+--------------------------------
+if we have amore than 1 tfvars file, when we run terraform apply  we need tp mention varfile
+`terraform apply -var-file = name of the file `
+`terraform apply -var="db_user=admin"  -var="db_username=dfdfd"`
+
