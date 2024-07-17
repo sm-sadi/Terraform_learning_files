@@ -13,6 +13,8 @@ provider "aws" {
   region  = "us-east-1"
 }
 
+
+# block Name = "provider_TypeOfResource" "will be name"
 resource "aws_instance" "First-terraform" {
   ami           = "ami-0b72821e2f351e396"
   instance_type = "t2.micro"
@@ -24,15 +26,3 @@ resource "aws_instance" "First-terraform" {
 }
 
 
-# using variable 
-resource "aws_db_instance" "database" {
-  allocated_storage = 1
-  engine            = "mysql"
-  instance_class    = "db.t3.micro"
-  username          = var.db_username
- password          = var.db_password
-
-  db_subnet_group_name = aws_db_subnet_group.private.name
-
-  skip_final_snapshot = true
-}
