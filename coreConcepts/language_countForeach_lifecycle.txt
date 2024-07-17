@@ -1,15 +1,16 @@
 
+https://developer.hashicorp.com/terraform/language
 
-Functions: 
-Numeric
-sting
-collection
-encoding
-filesystem
-date & time
-Hash & crypto
-IP network
 
+# Order of operations:
+------------------------- 
+!, - # (multiplication by -1)
+*, /, % # (modulo)
++, - # (subtraction)
+>, >=, <, <= # (comparison)
+==, != # (equality)
+&& # (AND)
+|| # (OR)
 
 count = 3 --To create multiple resouces 
 ------------------------------
