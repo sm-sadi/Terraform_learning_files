@@ -1,0 +1,39 @@
+## modules are containers for multipe resources that are used togather  
+# it hepls to package and reuse them
+#aws modules : https://registry.terraform.io/namespaces/terraform-aws-modules
+
+
+two types:
+--------- 
+Local and remote modules 
+
+Local:
+module "web-app" {
+  source = "../web-app"
+}
+
+Remote :
+
+Using: 
+module "vpc" {
+  source = "git@github.com:terraform-aws-modules/terraform-aws-vpc.git"
+}
+
+
+we can also pass seperate variables when consuming the module
+like this
+-------------------
+module "web_app_2" {
+  source = "../web-app-module"
+
+  # Input Variables
+  bucket_prefix    = "web-app-2-data"
+  domain           = "anotherdevopsdeployed.com"
+  app_name         = "web-app-2"
+  environment_name = "production"
+  instance_type    = "t2.micro"
+  create_dns_zone  = true
+  db_name          = "webapp2db"
+  db_user          = "bar"
+  db_pass          = var.db_pass_2
+}
