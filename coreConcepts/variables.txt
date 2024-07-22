@@ -19,10 +19,18 @@ variable "db_username" {
 then store the sensitive data in a ___.tfvars file like : 
 db_username = "admin"
 
+//using sensitve data variables
+----------------------------
+To use it during terrafor apply 
+terraform apply -var-file="secret_variables.tfvars"
 
 //Multiple tfvars file
 --------------------------------
 if we have amore than 1 tfvars file, when we run terraform apply  we need tp mention varfile
 `terraform apply -var-file = name of the file `
+
+
+
+directly giving variables in the command 
 `terraform apply -var="db_user=admin"  -var="db_username=dfdfd"`
 

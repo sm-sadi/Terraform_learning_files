@@ -1,0 +1,23 @@
+Workspace 
+-----------
+workspace is being used to define different environment
+example : dev staging production
+
+Commands:
+----------
+terraform workspace list 
+terraform workspace new NameOfTheWorkSpace
+terraform workspace delete NameOfTheWorkSpace
+terraform workspace select NameOfTheWorkSpace
+
+
+
+if in variables 
+--------------------
+  # Input Variables
+  domain           = "smsadi.com"
+  instance_type    = "t2.micro"
+  create_dns_zone  = terraform.workspace == "production" ? true : false         #(it will only trigger if workspace is production)
+
+
+  

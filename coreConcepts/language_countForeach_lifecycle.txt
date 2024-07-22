@@ -15,6 +15,8 @@ https://developer.hashicorp.com/terraform/language
 count = 3 --To create multiple resouces 
 ------------------------------
 Count  = 3
+count = var.abc ? 1 : 0      #(if abc is true it will be created)
+count = var.mno ? 0 : 1      #(if mno is not true it will be created)
 
 Example : 
 resource "aws_instance" "First-terraform" {
