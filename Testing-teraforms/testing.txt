@@ -1,0 +1,14 @@
+built in tools for testing
+-------------------------
+terrafrom fmt        # rewrites Terraform configuration files to a canonical format and style,
+terraform validate   # validates the syntax and arguments of the Terraform configuration files in a directory
+terrafrom plan       #
+
+custom validation rules
+
+
+External 
+-----------
+ftlint
+checkkov
+terraform sentinal
